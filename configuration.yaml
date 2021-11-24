@@ -41,18 +41,12 @@ ios:
 
 
 spotify:
-  client_id: ff15ff7bb6f84e90a94a9f117142a10e
-  client_secret: ef1a390edb504516bcf3ec64704f6956
+  client_id: !secret spotify_client_id
+  client_secret: !secret spotify_secret
 
 spotcast:
-  sp_dc: AQCtPZq-cwLb4dJjpKSfFfEiV8TyoaJbEN9KekmMemuuczT7YyGuztXKg4iBiyQfeVLPI85yh7ao_mRQKOEHepLVX7wmM0_Vq1dXp8cuw0g
-  sp_key: 88e959fc-a08d-4c8b-9814-9ee86264ebb5
-
-#sensor:
-#  - platform: steam_online
-#    api_key: 1AA30CEC301254822D3B2416D9260982
-#    accounts:
-#      - 76561198028959313
+  sp_dc: !secret spotcast
+  sp_key: !secret spotcastkey
 
 light:
   - platform: group
