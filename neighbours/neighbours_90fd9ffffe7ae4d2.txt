@@ -1,0 +1,71 @@
+{
+    "ieee": "90:fd:9f:ff:fe:7a:e4:d2",
+    "nwk": "0x0a33",
+    "lqi": 252,
+    "device_type": "Router",
+    "manufacturer": "IKEA of Sweden",
+    "model": "TRADFRI bulb E12 W op/ch 400lm",
+    "offline": false,
+    "neighbours": [
+        {
+            "ieee": "90:fd:9f:ff:fe:74:79:3f",
+            "nwk": "0x0ea2",
+            "lqi": 161,
+            "pan_id": "4d:b1:88:ec:ee:0f:10:56",
+            "device_type": "Router",
+            "rx_on_when_idle": "On",
+            "relation": "Sibling",
+            "new_joins_accepted": "Unknown",
+            "depth": 15,
+            "model": "TRADFRI bulb E12 W op/ch 400lm",
+            "manufacturer": "IKEA of Sweden",
+            "offline": false,
+            "supported": true
+        },
+        {
+            "ieee": "00:0d:6f:00:0b:3d:5f:54",
+            "nwk": "0x0000",
+            "lqi": 128,
+            "pan_id": "4d:b1:88:ec:ee:0f:10:56",
+            "device_type": "Coordinator",
+            "rx_on_when_idle": "On",
+            "relation": "Sibling",
+            "new_joins_accepted": "Unknown",
+            "depth": 0,
+            "model": "EZSP",
+            "manufacturer": "Silicon Labs",
+            "offline": false,
+            "supported": true
+        },
+        {
+            "ieee": "00:15:8d:00:02:53:16:90",
+            "nwk": "0x5fb8",
+            "lqi": 255,
+            "pan_id": "4d:b1:88:ec:ee:0f:10:56",
+            "device_type": "End_Device",
+            "rx_on_when_idle": "Off",
+            "relation": "Child",
+            "new_joins_accepted": "Not_Accepting",
+            "depth": 2,
+            "model": "lumi.sensor_magnet.aq2",
+            "manufacturer": "LUMI",
+            "offline": false,
+            "supported": true
+        },
+        {
+            "ieee": "d0:cf:5e:ff:fe:e8:5c:ef",
+            "nwk": "0x0d2d",
+            "lqi": 172,
+            "pan_id": "4d:b1:88:ec:ee:0f:10:56",
+            "device_type": "Router",
+            "rx_on_when_idle": "On",
+            "relation": "Sibling",
+            "new_joins_accepted": "Unknown",
+            "depth": 15,
+            "model": "TRADFRI bulb E12 W op/ch 400lm",
+            "manufacturer": "IKEA of Sweden",
+            "offline": false,
+            "supported": true
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+- id: '1635032196906'
+  alias: Shower Door
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: 25e6da556af6dfb12ccc6044e33faba2
+    entity_id: binary_sensor.shower_door
+    domain: binary_sensor
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 8a22264af6d982536129ad39b02a499e
+    entity_id: light.bathroom_fan
+    domain: light
+  - delay:
+      hours: 1
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: 8a22264af6d982536129ad39b02a499e
+    entity_id: light.bathroom_fan
+    domain: light
+  mode: single

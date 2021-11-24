@@ -1,0 +1,87 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+#wake_on_lan:
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+switch: !include switch.yaml
+
+sensor:
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use_percent
+      - type: processor_use
+      - type: last_boot
+
+ios:
+
+#eufy:
+#  devices:
+#    - address: 192.168.1.97
+#      access_token: FE1B1911127F4E67
+#      type: T1013
+#      name: Ceiling 1
+#    - address: 192.168.1.84
+#      access_token: CC052FF7D0644BE5
+#      type: T1013
+#      name: Ceiling 2
+
+
+spotify:
+  client_id: ff15ff7bb6f84e90a94a9f117142a10e
+  client_secret: ef1a390edb504516bcf3ec64704f6956
+
+spotcast:
+  sp_dc: AQCtPZq-cwLb4dJjpKSfFfEiV8TyoaJbEN9KekmMemuuczT7YyGuztXKg4iBiyQfeVLPI85yh7ao_mRQKOEHepLVX7wmM0_Vq1dXp8cuw0g
+  sp_key: 88e959fc-a08d-4c8b-9814-9ee86264ebb5
+
+#sensor:
+#  - platform: steam_online
+#    api_key: 1AA30CEC301254822D3B2416D9260982
+#    accounts:
+#      - 76561198028959313
+
+light:
+  - platform: group
+    name: Lamp
+    entities:
+      - light.lamp_bulb_1_on_off
+      - light.lamp_bulb_2_on_off
+      - light.lamp_bulb_3_on_off
+  - platform: group
+    name: Ceiling
+    entities:
+      - light.ceiling_bulb_1
+      - light.ceiling_bulb_2
+  - platform: group
+    name: Bedroom Lights
+    entities:
+      - light.lamp_bulb_1_on_off
+      - light.lamp_bulb_2_on_off
+      - light.lamp_bulb_3_on_off
+      - light.bedside_lamp
+      - light.desk_lamp
+  - platform: group
+    name: Every Light
+    entities:
+      - light.lamp_bulb_1_on_off
+      - light.lamp_bulb_2_on_off
+      - light.lamp_bulb_3_on_off
+      - light.ceiling_bulb_1
+      - light.ceiling_bulb_2
+      - light.bedside_lamp
+      - light.desk_lamp
+      - light.bathroom_light

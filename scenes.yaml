@@ -1,0 +1,29 @@
+- id: '1601766579431'
+  name: Disco
+  entities:
+    light.bedroom_lights:
+      min_mireds: 153
+      max_mireds: 370
+      brightness: 235
+      color_temp: 217
+      hs_color:
+      - 180
+      - 100
+      rgb_color:
+      - 0
+      - 255
+      - 255
+      xy_color:
+      - 0.151
+      - 0.343
+      entity_id:
+      - light.lamp_bulb_1_on_off
+      - light.lamp_bulb_2_on_off
+      - light.lamp_bulb_3_on_off
+      - light.ceiling_1
+      - light.ceiling_2
+      - light.bedside_lamp
+      - light.desk_lamp
+      friendly_name: Bedroom Lights
+      supported_features: 59
+      state: 'on'

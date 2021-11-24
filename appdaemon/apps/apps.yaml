@@ -1,0 +1,40 @@
+bedroom_controller:
+  module: controllerx
+  class: E1744LightController
+  controller: 14:b4:57:ff:fe:53:86:4f
+  integration: zha
+  multiple_click_delay: 500
+  light: light.bedroom_lights
+  automatic_steps: 5
+
+bedside_controller:
+  module: controllerx
+  class: E1743Controller
+  controller: 14:b4:57:ff:fe:c7:ec:6b
+  integration: zha
+  light: light.every_light
+  
+desk_controller:
+  module: controllerx
+  class: E1743Controller
+  controller: 68:0a:e2:ff:fe:7d:2f:80
+  integration: zha
+  light: light.desk_lamp
+  merge_mapping:
+    "on$1": "on"
+
+desk_controller2:
+  module: controllerx
+  class: E1743Controller
+  controller: 68:0a:e2:ff:fe:7d:2f:80
+  integration: zha
+  light: light.bathroom_light
+  mapping:
+    "off": "off"
+    
+bathroom_controller:
+  module: controllerx
+  class: E1743Controller
+  controller: bc:33:ac:ff:fe:89:20:d7
+  integration: zha
+  light: light.bedroom_lights
